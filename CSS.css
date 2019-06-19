@@ -26,6 +26,7 @@
 .head .head-left img{
     width: 20px;
     height: 20px;
+    vertical-align: sub;
 }
 .head .head-right{
     height: 32px;
@@ -33,6 +34,7 @@
     float: right;
     /*background-color:blue;*/
     line-height: 32px;
+    text-align: right;
 }
 .head .head-right a{
     margin-left: 15px;
@@ -66,6 +68,8 @@
     height: 35px;
     width: 500px;
     font-size: 20px;
+    /*outline: none;*/
+    padding-left: 8px;
 }
 .input .input-right{
     height: 35px;
@@ -79,9 +83,114 @@
 .input .input-right:hover{
     background-color: blue;
 }
-.content{
-    text-align: center;
+.list{
+    width: 893px;
+    height: 600px;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
 }
-.content img{
-    width: 70%;
+.list .list-head{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.list .list-head-left{
+    float: left;
+}
+.list .list-head-left a{
+    font-size: 14px;
+    height: 40px;
+    padding: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: #555555;
+}
+.list .list-head-left img{
+    vertical-align: middle;
+}
+.list .list-head-left a:hover{
+    background-color: #999;
+    color: white;
+}
+.list .list-head-right{
+    float: right;
+}
+.list .list-head-right img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.list .list-content-left{
+    width: 575px;
+    height: 600px;
+    float: left;
+    padding: 10px 5px 5px 10px;
+}
+.list .list-content-left img{
+    width: 170px;
+    height: 120px;
+}
+.list .list-content-left p{
+    font-size: 12px;
+    color: #555555;
+    cursor: pointer;
+}
+.list .list-content-left h3:hover{
+    color: #398BFB;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.list .list-content-raw1,
+.list .list-content-raw2{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+    height: 160px;
+    padding: 10px 0;
+}
+.list-content-raw2 img{
+    float: left;
+}
+.list .list-content-raw2 h3,
+.list .list-content-raw2 p{
+    padding: 20px 10px;
+    float:left;
+}
+.list .list-content-right{
+    width: 280px;
+    height: 600px;
+    float: left;
+}
+.list .list-head-right-top{
+    width: 280px;
+    height: 60px;
+    padding: 10px 0 0 15px;
+}
+.list-head-right-top h4{
+    float: left;
+    cursor: pointer;
+}
+.list-head-right-top div{
+    float: right;
+    cursor: pointer;
+}
+.list-head-right-top div:hover{
+    color: #398BFB;
+}
+.list-head-right-top img{
+    vertical-align: middle;
+}
+.list .list-head-right-body{
+    padding: 0 20px;
+}
+.list-head-right-body li{
+    font-size: 14px;
+    color:#666;
+    list-style: none;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.list-head-right-body li:hover{
+    color: #398BFB;
 }
