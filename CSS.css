@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    height: 32px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    /*background-color:red;*/
+}
+.head .head-left{
+    height: 32px;
+    width: 300px;
+    /*background-color: #333;*/
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+}
+.head .head-left a{
+    color: #555;
+}
+.head .head-left img{
+    width: 20px;
+    height: 20px;
+}
+.head .head-right{
+    height: 32px;
+    width: 450px;
+    float: right;
+    /*background-color:blue;*/
+    line-height: 32px;
+}
+.head .head-right a{
+    margin-left: 15px;
+    color: #555;
+}
+.head .head-right .more{
+    height: 32px;
+    width: 70px;
+    background-color: #398BFB;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.logo{
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    margin-top: 50px;
+}
+.logo img{
+    width: 250px;
+    height: 120px;
+}
+.input{
+    text-align: center;
+    width: 100%;
+    height: 70px;
+}
+.input .input-left{
+    height: 35px;
+    width: 500px;
+    font-size: 20px;
+}
+.input .input-right{
+    height: 35px;
+    width: 120px;
+    color: white;
+    font-size: 20px;
+    background-color: #398BFB;
+    border: none;
+    cursor:pointer;
+}
+.input .input-right:hover{
+    background-color: blue;
+}
+.content{
+    text-align: center;
+}
+.content img{
+    width: 70%;
+}
