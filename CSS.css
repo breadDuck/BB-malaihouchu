@@ -2,7 +2,35 @@
     margin: 0;
     padding: 0;
 }
-
+.dock{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    width: 100px;
+    background-color: #49f5;
+    border-radius:30%;
+}
+.dock img{
+    width: 100px;
+    height: 100px;
+}
+.dock li{
+    transition:all 0.2s linear;
+}
+.dock li:hover{
+    transform: scale(1.5);
+}
+.bgi{
+    background-image: url(images/bgi.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
 .head{
     height: 32px;
     width: 100%;
