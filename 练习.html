@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鑫哥♂next♂what?</title>
+    <link rel="stylesheet" href="fonts/style.css">
+    <script>
+        var x;
+        var y=Number(x);
+        console.log(y);
+        console.log(typeof y);
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::before, .clearfix::after{
+            display: table;
+            clear: both;
+            content:'';
+        }
+        .container{
+            height: 400px;
+            min-width: 400px;
+            background-color: greenyellow;
+            /*padding: 0 200px;*/
+        }
+        .main{
+            width: 100%;
+            height: 400px;
+            background-color: blue;
+            float: left;
+        }
+        .left, .right{
+            width: 200px;
+            height: 400px;
+            background-color: orangered;
+            float: left;
+            /*position: relative;*/
+        }
+        .main-content{
+            margin: 0 200px;
+        }
+        .left{
+            margin-left: -80%;
+            /*left: -200px;*/
+            transition: all 1s linear;
+            transform-origin: 200px 50px;
+        }
+        .left:active{
+            /*transform: translate(800px,100px);*/
+            transform: rotate(360deg);
+        }
+
+        .right{
+            margin-left: -200px;
+            /*right: -200px;*/
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            transition: all 1s linear;
+            transform-style: preserve-3d;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box3:hover img{
+           transform: rotateY(180deg);
+        }
+        img:first-child{
+            z-index: 9;
+            backface-visibility: hidden;
+        }
+        .box3{
+            width: 300px;
+            height: 300px;
+            margin: 10px auto;
+            position: relative;
+        }
+        body{
+    perspective: 800px;
+}
+    </style>
+</head>
+<body>
+<button onclick="alert('11111')">111111111111111111</button>
+<div class="container">
+    <div class="main"><div class="main-content">main</div></div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+<div class="box3">
+    <img src="images/news5.png" alt="">
+    <img src="images/news4.png" alt="">
+</div>
+
+</body>
+
+</html>

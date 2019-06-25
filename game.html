@@ -5,26 +5,65 @@
 		<title>bb游戏</title>
 		<link rel="shortcut icon" href="images/bb.gif" type="image/x-icon">
 		 <style>
+			 .bb-logo{
+				 width: 20%;
+				 height: 20%;
+				 position: fixed;
+				 z-index: 10;
+				 left: 0;
+				 top: 0;
+			 }
+			 .bb-logo:hover img{
+				 transform: rotateY(180deg);
+			 }
+			 .bb-logo:hover img:last-child{
+				 visibility: visible;
+			 }
+			 .bb-logo img{
+				 width: 100%;
+				 height: 100%;
+				 transition: all 0.5s linear;
+				 transform-style: preserve-3d;
+				 position: absolute;
+			 }
+			 .bb-logo img:first-child{
+				 backface-visibility: hidden;
+			 }
+			 .bb-logo img:last-child{
+				 visibility: hidden;
+			 }
 		.c {margin-left:40%;width:19px;height:19px;background:red;position:absolute;}
 		.d {margin-left: 40%;width:19px;height:19px;background:gray;position:absolute;}
 		.f {top:0;left:40%;background:black;position:absolute;}
 		.dock{
 			position: fixed;
-			left: 0;
-			bottom: 0;
-			height: 300px;
-			width: 100px;
+			left: -30%;
+			top: 40%;
+			height: 15%;
+			width: 40%;
 			background-color: #49f5;
-			border-radius:30%;
+			border-radius:40%;
+			display: flex;
+			z-index: 10;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s linear;
 		}
 		.dock img{
-			width: 100px;
-			height: 100px;
+			width: 80%;
+			height: 90%;
 		}
-		.dock li{
+		.dock:hover{
+			transform: translateX(78%);
+		}
+		.dock a{
+			flex: 1;
 			transition:all 0.2s linear;
+			/*background-color: #6664;*/
+			height: 100%;
+			width: 100%;
 		}
-		.dock li:hover{
+		.dock a:hover{
 			transform: scale(1.5);
 		}
 		*{
@@ -40,11 +79,14 @@
 
 <body>
 <section class="dock">
-	<ul>
-		<li><a href="index.html"><img src="images/button1.png" alt="button1"></a></li>
-		<li><a href="bb堂用户注册.html"><img src="images/button2.png" alt="button2"></a></li>
-		<li><a href="game.html"><img src="images/button3.png" alt="button3"></a></li>
-	</ul>
+	<a href="index.html"><img src="images/button1.png" alt="button1"></a>
+	<a href="login.html"><img src="images/button4.png" alt="button4"></a>
+	<a href="bb堂用户注册.html"><img src="images/button2.png" alt="button2"></a>
+	<a href="game.html"><img src="images/button3.png" alt="button3"></a>
+</section>
+<section class="bb-logo">
+	<img src="images/Sign.png" alt="BB图标">
+	<img src="images/logo.png" alt="">
 </section>
 </body>
 </html>
